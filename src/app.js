@@ -48,7 +48,7 @@ async function setup() {
     },
   };
 
-  var mediaServer = new NodeMediaServer(config);
+  const mediaServer = new NodeMediaServer(config);
   mediaServer.run();
 }
 
