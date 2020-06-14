@@ -1,10 +1,10 @@
 version: "3"
 services:
-  forstream-media:
-    image: "forstream-media:latest"
-    container_name: "forstream-media"
+  forstream-live:
+    image: "forstream-live:latest"
+    container_name: "forstream-live"
     volumes:
-      - "./configs.yml:/usr/src/forstream-media/configs.yml"
+      - "./configs.yml:/usr/src/forstream-live/configs.yml"
 networks:
   default:
     external:

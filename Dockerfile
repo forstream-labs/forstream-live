@@ -1,6 +1,6 @@
 FROM keymetrics/pm2:12-alpine
 
-WORKDIR /usr/src/forstream-media
+WORKDIR /usr/src/forstream-live
 
 COPY src src/
 COPY assets assets/

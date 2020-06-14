@@ -2,7 +2,7 @@
 
 module.exports = {
   apps: [{
-    name: 'forstream-media',
+    name: 'forstream-live',
     script: 'src/app.js',
     exec_mode: 'cluster',
     instances: 'max',

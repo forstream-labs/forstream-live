@@ -1,18 +1,18 @@
 {
-  "name": "forstream-rtmp",
-  "description": "Forstream RTMP Server",
+  "name": "forstream-live",
+  "description": "Forstream Live Server",
   "version": "0.0.0",
   "private": true,
   "homepage": "https://forstream.io",
   "author": "Forstream team <contact@forstream.io> (https://forstream.io)",
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/forstream/forstream-rtmp.git"
+    "url": "git+https://bitbucket.org/forstream/forstream-live.git"
   },
   "scripts": {
     "lint": "eslint '**/*.js'",
     "start": "node src/app.js",
-    "build-image": "docker build -t forstream-rtmp .",
+    "build-image": "docker build -t forstream-live .",
     "release-dist": "node tasks/release.js",
     "publish-dist": "node tasks/publish.js"
   },
@@ -26,10 +26,10 @@
     "@forstream/models": "0.0.3",
     "@forstream/utils": "0.0.2",
     "app-module-path": "2.2.0",
-    "bluebird": "^3.7.2",
-    "mongoose": "^5.9.18",
-    "node-media-server": "^2.1.9",
-    "winston": "^3.2.1",
-    "yamljs": "^0.3.0"
+    "bluebird": "3.7.2",
+    "mongoose": "5.9.18",
+    "node-media-server": "2.1.9",
+    "winston": "3.2.1",
+    "yamljs": "0.3.0"
   }
 }

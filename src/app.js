@@ -9,11 +9,13 @@ const {logger} = require('@forstream/utils');
 const NodeMediaServer = require('node-media-server');
 const _ = require('lodash');
 
-logger.create({level: configs.debug ? 'debug' : 'info', filename: 'forstream-media.log'});
+logger.create({level: configs.debug ? 'debug' : 'info', filename: 'forstream-live.log'});
 mongo.setup({...configs.mongo, logger});
 
 async function setup() {
-  const liveStreams = await LiveStream.find({stream_status: {$in: ['ready', 'live']}});
+  logger.info('Finding live streams with status "live"...');
+  const liveStreams = await LiveStream.find({stream_status: 'live'});
+  logger.info('%s live streams found, building relay tasks...', liveStreams.length);
   const tasks = _.compact(_.flatten(liveStreams.map((liveStream) => liveStream.providers.map((providerStream) => {
     if (!providerStream.stream_url) {
       return null;
@@ -25,8 +27,7 @@ async function setup() {
       edge: providerStream.stream_url,
     };
   }))));
-
-  console.log(tasks);
+  logger.info('%s relay tasks built', liveStreams.length);
 
   const config = {
     logType: configs.debug ? 3 : 2,
@@ -42,13 +43,13 @@ async function setup() {
       allow_origin: '*',
     },
     relay: {
-      ffmpeg: configs.ffmpegPath,
       tasks,
+      ffmpeg: configs.ffmpegPath,
     },
   };
 
-  var nms = new NodeMediaServer(config);
-  nms.run();
+  var mediaServer = new NodeMediaServer(config);
+  mediaServer.run();
 }
 
 setup();
