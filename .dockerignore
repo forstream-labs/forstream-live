@@ -1,0 +1,12 @@
+.DS_Store
+/.dockerignore
+/.eslintignore
+/.eslintrc
+/.git
+/.gitignore
+/configs.yml
+/docker-compose.yml
+/Dockerfile
+/node_modules
+/npm-debug.log
+/forstream-media.log
