@@ -6,6 +6,7 @@ services:
     volumes:
       - "./configs.yml:/usr/src/forstream-live/configs.yml"
     ports:
+      - "5000:5000"
       - "1935:1935"
 networks:
   default:
