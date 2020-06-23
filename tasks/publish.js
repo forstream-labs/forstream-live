@@ -23,7 +23,7 @@ if (require.main === module) {
       region: 'us-east-1',
       repository: {
         url: '870961355790.dkr.ecr.us-east-1.amazonaws.com',
-        namespace: 'forstream-live',
+        namespace: 'forstream',
       },
     },
   });
