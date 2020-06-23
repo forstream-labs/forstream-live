@@ -7,7 +7,7 @@
   "author": "Forstream team <contact@forstream.io> (https://forstream.io)",
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/forstream/forstream-live.git"
+    "url": "https://bitbucket.org/forstream/forstream-live.git"
   },
   "scripts": {
     "lint": "eslint '**/*.js'",
@@ -20,7 +20,7 @@
     "eslint": "7.2.0",
     "eslint-config-airbnb-base": "14.2.0",
     "eslint-plugin-import": "2.21.2",
-    "release-n-publish": "0.0.14"
+    "release-n-publish": "0.0.17"
   },
   "dependencies": {
     "@forstream/models": "0.0.5",
