@@ -17,6 +17,6 @@ RUN apk update && apk upgrade && \
 
 RUN npm install --production && rm -f .npmrc
 
-EXPOSE 3000
+EXPOSE 1935
 
 CMD [ "pm2-runtime", "start", "ecosystem.config.js" ]
