@@ -22,7 +22,7 @@ exports.env = get('app.env', 'development');
 exports.port = get('app.port', 5000);
 exports.debug = get('app.debug', false);
 
-exports.ffmpegPath = getRequired('ffmpegPath');
+exports.ffmpegPath = get('ffmpegPath', '/usr/bin/ffmpeg');
 
 exports.mongo = {
   host: get('mongo.host', 'localhost'),

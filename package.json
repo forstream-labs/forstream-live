@@ -12,7 +12,7 @@
   "scripts": {
     "lint": "eslint '**/*.js'",
     "start": "node src/app.js",
-    "build-image": "docker build -t forstream-live .",
+    "build-image": "docker build --build-arg NPM_TOKEN=${NPM_TOKEN} -t forstream-live .",
     "release-dist": "node tasks/release.js",
     "publish-dist": "node tasks/publish.js"
   },
@@ -28,9 +28,9 @@
     "app-module-path": "2.2.0",
     "bluebird": "3.7.2",
     "lodash": "4.17.15",
-    "mongoose": "5.9.19",
+    "mongoose": "5.9.20",
     "node-media-server": "2.1.9",
-    "winston": "3.3.0",
+    "winston": "3.3.2",
     "yamljs": "0.3.0"
   }
 }
