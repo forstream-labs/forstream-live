@@ -17,20 +17,20 @@
     "publish-dist": "node tasks/publish.js"
   },
   "devDependencies": {
-    "eslint": "7.2.0",
+    "eslint": "7.3.1",
     "eslint-config-airbnb-base": "14.2.0",
     "eslint-plugin-import": "2.21.2",
     "release-n-publish": "0.0.17"
   },
   "dependencies": {
-    "@forstream/models": "0.0.5",
+    "@forstream/models": "0.0.7",
     "@forstream/utils": "0.0.2",
     "app-module-path": "2.2.0",
     "bluebird": "3.7.2",
     "lodash": "4.17.15",
     "mongoose": "5.9.20",
     "node-media-server": "2.1.9",
-    "winston": "3.3.2",
+    "winston": "3.3.3",
     "yamljs": "0.3.0"
   }
 }
