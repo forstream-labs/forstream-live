@@ -1,7 +1,7 @@
 {
   "name": "forstream-live",
   "description": "Forstream Live Server",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": true,
   "homepage": "https://forstream.io",
   "author": "Forstream team <contact@forstream.io> (https://forstream.io)",
@@ -23,7 +23,7 @@
     "release-n-publish": "0.0.17"
   },
   "dependencies": {
-    "@forstream/models": "0.0.10",
+    "@forstream/models": "0.0.11",
     "@forstream/utils": "0.0.2",
     "app-module-path": "2.2.0",
     "bluebird": "3.7.2",
