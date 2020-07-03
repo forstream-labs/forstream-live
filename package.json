@@ -24,11 +24,11 @@
   },
   "dependencies": {
     "@forstream/models": "0.0.11",
-    "@forstream/utils": "0.0.2",
+    "@forstream/utils": "0.0.3",
     "app-module-path": "2.2.0",
     "bluebird": "3.7.2",
     "lodash": "4.17.15",
-    "mongoose": "5.9.20",
+    "mongoose": "5.9.21",
     "node-media-server": "2.1.9",
     "winston": "3.3.3",
     "yamljs": "0.3.0"

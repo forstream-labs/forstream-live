@@ -9,7 +9,7 @@ const {logger} = require('@forstream/utils');
 const NodeMediaServer = require('node-media-server');
 const _ = require('lodash');
 
-logger.create({level: configs.debug ? 'debug' : 'info', filename: 'forstream-live.log'});
+logger.setup({level: configs.debug ? 'debug' : 'info', filename: 'forstream-live.log'});
 mongo.setup({...configs.mongo, logger});
 
 async function setup() {
