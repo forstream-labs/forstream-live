@@ -17,13 +17,13 @@
     "publish-dist": "node tasks/publish.js"
   },
   "devDependencies": {
-    "eslint": "7.3.1",
+    "eslint": "7.4.0",
     "eslint-config-airbnb-base": "14.2.0",
     "eslint-plugin-import": "2.22.0",
     "release-n-publish": "0.0.17"
   },
   "dependencies": {
-    "@forstream/models": "0.0.11",
+    "@forstream/models": "0.0.13",
     "@forstream/utils": "0.0.3",
     "app-module-path": "2.2.0",
     "bluebird": "3.7.2",
