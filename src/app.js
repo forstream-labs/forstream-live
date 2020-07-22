@@ -73,4 +73,6 @@ async function setup() {
   });
 }
 
-setup();
+mongo.on('connected', () => {
+  setup();
+});
