@@ -17,19 +17,19 @@
     "publish-dist": "node tasks/publish.js"
   },
   "devDependencies": {
-    "eslint": "7.4.0",
+    "eslint": "7.5.0",
     "eslint-config-airbnb-base": "14.2.0",
     "eslint-plugin-import": "2.22.0",
     "release-n-publish": "0.0.17"
   },
   "dependencies": {
-    "@forstream/models": "0.0.13",
-    "@forstream/utils": "0.0.3",
+    "@forstream/models": "0.0.15",
+    "@forstream/commons": "0.0.6",
     "app-module-path": "2.2.0",
     "bluebird": "3.7.2",
-    "lodash": "4.17.15",
-    "mongoose": "5.9.21",
-    "node-media-server": "2.1.9",
+    "lodash": "4.17.19",
+    "mongoose": "5.9.25",
+    "node-media-server": "2.2.2",
     "winston": "3.3.3",
     "yamljs": "0.3.0"
   }

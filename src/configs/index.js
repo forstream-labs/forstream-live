@@ -26,3 +26,9 @@ exports.mongo = {
   password: get('mongo.password'),
   debug: get('mongo.debug', false),
 };
+
+exports.redis = {
+  host: get('redis.host', 'localhost'),
+  port: get('redis.port', 6379),
+  password: get('redis.password'),
+};
